@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="horizontal"
+    tools:context=".Message">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="276dp"
+            android:background="#48636868"
+            android:ems="10"
+            android:hint="Enter the Number"
+            android:inputType="number"
+            android:paddingStart="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="333dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="328dp"
+            android:background="#48636868"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Compose Message Here...."
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:paddingStart="10sp"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="153dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="456dp"
+            android:src="@drawable/smg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="330dp"
+            android:layout_height="184dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/smsicn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+</FrameLayout>
+
